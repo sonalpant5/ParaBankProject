@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-11-08T19:48:06 GMT-06:00" name="Default suite" finished-at="2025-11-08T19:48:14 GMT-06:00" duration-ms="7410">
+    <groups>
+    </groups>
+    <test started-at="2025-11-08T19:48:06 GMT-06:00" name="Default test" finished-at="2025-11-08T19:48:14 GMT-06:00" duration-ms="7410">
+      <class name="pb_TestCases.TestRegisterNewUser">
+        <test-method is-config="true" signature="setup()[pri:0, instance:pb_TestCases.TestRegisterNewUser@503d687a]" started-at="2025-11-08T19:48:06 GMT-06:00" name="setup" finished-at="2025-11-08T19:48:12 GMT-06:00" duration-ms="5270" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="verifyRegisterNewUser()[pri:0, instance:pb_TestCases.TestRegisterNewUser@503d687a]" started-at="2025-11-08T19:48:12 GMT-06:00" name="verifyRegisterNewUser" finished-at="2025-11-08T19:48:13 GMT-06:00" duration-ms="1096" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyRegisterNewUser -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:pb_TestCases.TestRegisterNewUser@503d687a]" started-at="2025-11-08T19:48:13 GMT-06:00" name="tearDown" finished-at="2025-11-08T19:48:14 GMT-06:00" duration-ms="993" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- pb_TestCases.TestRegisterNewUser -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
