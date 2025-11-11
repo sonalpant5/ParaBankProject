@@ -26,12 +26,12 @@ public class HomePage {
 
 	public void navigateToRegistrationPage() {
 		// Code to navigate to the registration page
-		driver.findElement(registerLink).click();		
+		driver.findElement(registerLink).click();
 	}
-	
+
 	public void logout() {
 		driver.findElement(logoutLink).click();
 	}
 
-	
+
 }
