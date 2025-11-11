@@ -11,18 +11,16 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 
-import io.github.bonigarcia.wdm.WebDriverManager;
-
 public class BaseClass_pb {
 	/*
 	 * public WebDriver driver;
-	 * 
+	 *
 	 * @BeforeClass public void setup() { WebDriverManager.chromedriver().setup();
 	 * driver = new ChromeDriver(); driver.manage().window().maximize();
 	 * driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-	 * 
+	 *
 	 * driver.get("https://parabank.parasoft.com/parabank/index.htm");
-	 * 
+	 *
 	 * } // @AfterClass // public void tearDown() { // if(driver!=null) { //
 	 * driver.quit(); // } // }
 	 */
@@ -34,8 +32,8 @@ public class BaseClass_pb {
 	public void setup() throws Exception {
 		readPropertiesFile("pb_global.properties");
 		// Add browser launch logic here based on prop values
-		
-		
+
+
 		// Launch Browser based on browser type.
 		switch (prop.getProperty("browsertype").toLowerCase()) {
 		case "chrome":
@@ -77,7 +75,7 @@ public class BaseClass_pb {
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(20));
-		
+
 	}
 
 	@SuppressWarnings("deprecation")

@@ -2,18 +2,19 @@ package pb_PageObjects;
 
 import java.time.Duration;
 import java.util.Map;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 //Sonal Code
-/* 
+/*
  * This class handles the registration of a new user on the ParaBank application.
  */
 public class RegisterNewUserPage {
 
 WebDriver driver;
-	
+
 	By firstName = By.id("customer.firstName");
 	By lastName = By.id("customer.lastName");
 	By address = By.id("customer.address.street");
@@ -28,11 +29,11 @@ WebDriver driver;
 	By registerButton = By.xpath("//input[@value='Register']");
 	By successMsg = By.xpath("//p[contains(text(),'Your account was created successfully')]");
 
-	
+
 	public RegisterNewUserPage(WebDriver driver) {
 		this.driver = driver;
 	}
-	
+
 	public void registerNewUser(Map<String,String> userData) {
 		driver.findElement(firstName).sendKeys(userData.get("firstName"));
 		driver.findElement(lastName).sendKeys(userData.get("lastName"));
@@ -47,7 +48,7 @@ WebDriver driver;
 		driver.findElement(confirmPassword).sendKeys(userData.get("confirmPassword"));
 		driver.findElement(registerButton).click();
 	}
-	
+
 	public boolean confirmRegistrationSuccess() {
 		try{
 			return(new WebDriverWait(driver, Duration.ofSeconds(10))
