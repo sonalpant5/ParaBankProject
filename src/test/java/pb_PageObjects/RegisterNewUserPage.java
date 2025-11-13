@@ -13,21 +13,21 @@ import org.openqa.selenium.support.ui.WebDriverWait;
  */
 public class RegisterNewUserPage {
 
-WebDriver driver;
+protected WebDriver driver;
 
-	By firstName = By.id("customer.firstName");
-	By lastName = By.id("customer.lastName");
-	By address = By.id("customer.address.street");
-	By city = By.id("customer.address.city");
-	By state = By.id("customer.address.state");
-	By zipCode = By.id("customer.address.zipCode");
-	By phoneNumber = By.id("customer.phoneNumber");
-	By ssn = By.id("customer.ssn");
-	By username = By.id("customer.username");
-	By password = By.id("customer.password");
-	By confirmPassword = By.id("repeatedPassword");
-	By registerButton = By.xpath("//input[@value='Register']");
-	By successMsg = By.xpath("//p[contains(text(),'Your account was created successfully')]");
+	private By firstName = By.id("customer.firstName");
+	private By lastName = By.id("customer.lastName");
+	private By address = By.id("customer.address.street");
+	private By city = By.id("customer.address.city");
+	private By state = By.id("customer.address.state");
+	private By zipCode = By.id("customer.address.zipCode");
+	private By phoneNumber = By.id("customer.phoneNumber");
+	private By ssn = By.id("customer.ssn");
+	private By username = By.id("customer.username");
+	private By password = By.id("customer.password");
+	private By confirmPassword = By.id("repeatedPassword");
+	private By registerButton = By.xpath("//input[@value='Register']");
+	private By successMsg = By.xpath("//p[contains(text(),'Your account was created successfully')]");
 
 
 	public RegisterNewUserPage(WebDriver driver) {

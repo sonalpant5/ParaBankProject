@@ -12,20 +12,8 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 
 public class BaseClass_pb {
-	/*
-	 * public WebDriver driver;
-	 *
-	 * @BeforeClass public void setup() { WebDriverManager.chromedriver().setup();
-	 * driver = new ChromeDriver(); driver.manage().window().maximize();
-	 * driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-	 *
-	 * driver.get("https://parabank.parasoft.com/parabank/index.htm");
-	 *
-	 * } // @AfterClass // public void tearDown() { // if(driver!=null) { //
-	 * driver.quit(); // } // }
-	 */
-
-	protected WebDriver driver;
+	
+	protected static WebDriver driver;
 	protected Properties prop = new Properties();
 
 	@BeforeClass
@@ -82,6 +70,7 @@ public class BaseClass_pb {
 	@AfterClass
 	public void tearDown() throws Exception
 	{
+		if (driver != null)
 		driver.close();
 		Runtime.getRuntime().exec("taskkill /F /IM chromeDriver.exe");
 		Runtime.getRuntime().exec("taskkill /F /IM chrome.exe");
