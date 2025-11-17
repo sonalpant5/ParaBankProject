@@ -66,14 +66,14 @@ public class BaseClass_pb {
 
 	}
 
-	@SuppressWarnings("deprecation")
-	@AfterClass
-	public void tearDown() throws Exception
-	{
-		if (driver != null)
-		driver.close();
-		Runtime.getRuntime().exec("taskkill /F /IM chromeDriver.exe");
-		Runtime.getRuntime().exec("taskkill /F /IM chrome.exe");
-	}
+//	@SuppressWarnings("deprecation")
+//	@AfterClass
+//	public void tearDown() throws Exception
+//	{
+//		if (driver != null)
+//		driver.close();
+//		Runtime.getRuntime().exec("taskkill /F /IM chromeDriver.exe");
+//		Runtime.getRuntime().exec("taskkill /F /IM chrome.exe");
+//	}
 
 }
