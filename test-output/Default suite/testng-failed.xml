@@ -3,13 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="pb_TestCases.TestOpenNewAccount">
+      <class name="pb_TestCases.TestTranferFunds">
         <methods>
-          <include name="testOpenNewAccount"/>
+          <include name="testTransferFunds"/>
           <include name="setup"/>
-          <include name="tearDown"/>
         </methods>
-      </class> <!-- pb_TestCases.TestOpenNewAccount -->
+      </class> <!-- pb_TestCases.TestTranferFunds -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

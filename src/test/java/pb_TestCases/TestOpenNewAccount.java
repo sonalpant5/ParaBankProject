@@ -2,7 +2,6 @@ package pb_TestCases;
 
 import java.util.Map;
 
-import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 

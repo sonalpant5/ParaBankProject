@@ -2,24 +2,20 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-11-11T19:56:13 GMT-06:00" name="Suite" finished-at="2025-11-11T19:56:27 GMT-06:00" duration-ms="13445">
+  <suite started-at="2025-11-17T15:49:20 GMT-06:00" name="Default suite" finished-at="2025-11-17T15:49:34 GMT-06:00" duration-ms="13719">
     <groups>
     </groups>
-    <test started-at="2025-11-11T19:56:13 GMT-06:00" name="Test" finished-at="2025-11-11T19:56:27 GMT-06:00" duration-ms="13445">
-      <class name="pb_TestCases.TestOpenNewAccount">
-        <test-method is-config="true" signature="setup()[pri:0, instance:pb_TestCases.TestOpenNewAccount@8317c52]" started-at="2025-11-11T19:56:13 GMT-06:00" name="setup" finished-at="2025-11-11T19:56:20 GMT-06:00" duration-ms="6998" status="PASS">
+    <test started-at="2025-11-17T15:49:20 GMT-06:00" name="Default test" finished-at="2025-11-17T15:49:34 GMT-06:00" duration-ms="13719">
+      <class name="pb_TestCases.TestTranferFunds">
+        <test-method is-config="true" signature="setup()[pri:0, instance:pb_TestCases.TestTranferFunds@3972a855]" started-at="2025-11-17T15:49:20 GMT-06:00" name="setup" finished-at="2025-11-17T15:49:27 GMT-06:00" duration-ms="6123" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="testOpenNewAccount()[pri:0, instance:pb_TestCases.TestOpenNewAccount@8317c52]" started-at="2025-11-11T19:56:20 GMT-06:00" name="testOpenNewAccount" finished-at="2025-11-11T19:56:24 GMT-06:00" duration-ms="4253" status="PASS">
+        <test-method signature="testTransferFunds()[pri:0, instance:pb_TestCases.TestTranferFunds@3972a855]" started-at="2025-11-17T15:49:27 GMT-06:00" name="testTransferFunds" finished-at="2025-11-17T15:49:34 GMT-06:00" duration-ms="7539" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testOpenNewAccount -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:pb_TestCases.TestOpenNewAccount@8317c52]" started-at="2025-11-11T19:56:24 GMT-06:00" name="tearDown" finished-at="2025-11-11T19:56:27 GMT-06:00" duration-ms="2119" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- pb_TestCases.TestOpenNewAccount -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+        </test-method> <!-- testTransferFunds -->
+      </class> <!-- pb_TestCases.TestTranferFunds -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
