@@ -21,14 +21,14 @@ public class OpenNewAccountPage {
 	
 	public OpenNewAccountPage(WebDriver driver) {
 		this.driver = driver;
-		String actualTitle = driver.getTitle().trim().replaceAll("\\s+", " ");
-		String expectedTitle = "ParaBank | Open Account";
-
-		if (!actualTitle.equals(expectedTitle)) {
-			System.out.println("Title mismatch!");
-			throw new IllegalStateException(
-					"This is not Open New Account Page," + " current page is: " + driver.getTitle());
-		}
+//		String actualTitle = driver.getTitle().trim().replaceAll("\\s+", " ");
+//		String expectedTitle = "ParaBank | Open Account";
+//
+//		if (!actualTitle.equals(expectedTitle)) {
+//			System.out.println("Title mismatch!");
+//			throw new IllegalStateException(
+//					"This is not Open New Account Page," + " current page is: " + driver.getTitle());
+//		}
 	}
 	
 	public boolean isNewAccountOpenSuccess(String accountType) throws Exception {

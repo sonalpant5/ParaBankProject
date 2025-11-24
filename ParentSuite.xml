@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="ParentSuite" verbose="1" >
+	<test name="ChromeWorkFlowTest">
+	<parameter name="browser" value="chrome"/>
+		<classes>
+			<class name="pb_TestCases.TestRegisterNewUserAndLogin" />
+			<class name="pb_TestCases.TestOpenNewAccount" />
+			<class name="pb_TestCases.TestTranferFunds" />
+		</classes>
+	</test>
+	<test name="FirefoxWorkFlowTest">
+		<parameter name="browser" value="firefox" />
+		<classes>
+			<class name="pb_TestCases.TestRegisterNewUserAndLogin" />
+			<class name="pb_TestCases.TestOpenNewAccount" />
+			<class name="pb_TestCases.TestTranferFunds" />
+		</classes>
+	</test>
+
+</suite> <!-- Suite -->

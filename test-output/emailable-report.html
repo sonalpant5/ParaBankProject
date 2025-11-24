@@ -8,11 +8,41 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="8">Default suite</th></tr>
-<tr><td><a href="#t0">Default test</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">13,719</td><td></td><td></td></tr>
+<tr><th colspan="8">ParentSuite</th></tr>
+<tr><td><a href="#t0">ChromeWorkFlowTest</a></td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">28,454</td><td></td><td></td></tr>
+<tr class="stripe"><td><a href="#t1">FirefoxWorkFlowTest</a></td><td class="num">3</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">33,472</td><td></td><td></td></tr>
+<tr><th>Total</th><th class="num">5</th><th class="num">0</th><th class="num">0</th><th class="num attn">1</th><th class="num">61,926</th><th colspan="2"></th></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">pb_TestCases.TestTranferFunds</td><td><a href="#m0">testTransferFunds</a></td><td rowspan="1">1763416167079</td><td rowspan="1">7539</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">ParentSuite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">ChromeWorkFlowTest &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">pb_TestCases.TestTranferFunds</td><td><a href="#m0">testTransferFunds</a></td><td rowspan="1">1764004799093</td><td rowspan="1">9060</td></tr><tr><th colspan="4">ChromeWorkFlowTest &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">pb_TestCases.TestOpenNewAccount</td><td><a href="#m1">testOpenNewAccount</a></td><td rowspan="1">1764004791031</td><td rowspan="1">5319</td></tr><tr class="passedodd"><td rowspan="1">pb_TestCases.TestRegisterNewUserAndLogin</td><td><a href="#m2">verifyRegisterNewUser</a></td><td rowspan="1">1764004785334</td><td rowspan="1">2655</td></tr></tbody>
+<tbody id="t1"><tr><th colspan="4">FirefoxWorkFlowTest &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">pb_TestCases.TestOpenNewAccount</td><td><a href="#m3">testOpenNewAccount</a></td><td rowspan="1">1764004823735</td><td rowspan="1">3413</td></tr><tr class="passedodd"><td rowspan="1">pb_TestCases.TestRegisterNewUserAndLogin</td><td><a href="#m4">verifyRegisterNewUser</a></td><td rowspan="1">1764004815132</td><td rowspan="1">1998</td></tr><tr class="passedeven"><td rowspan="1">pb_TestCases.TestTranferFunds</td><td><a href="#m5">testTransferFunds</a></td><td rowspan="1">1764004833688</td><td rowspan="1">7129</td></tr></tbody>
 </table>
-<h2>Default test</h2><h3 id="m0">pb_TestCases.TestTranferFunds#testTransferFunds</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>ChromeWorkFlowTest</h2><h3 id="m0">pb_TestCases.TestTranferFunds#testTransferFunds</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found in the current frame
+  (Session info: chrome=142.0.7444.176)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: &apos;4.29.0&apos;, revision: &apos;18ae989&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [32e47c5affb17560ddbfab6b613ef38e, getElementText {id=f.F2327954D50A9D6FFF75C72CCE204B1F.d.BF4E0A10E9EC371446CB005ACD594644.e.142}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.176, chrome: {chromedriverVersion: 142.0.7444.175 (302067f14a4..., userDataDir: C:\Users\sonal\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55098}, goog:processID: 17824, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55098/devtoo..., se:cdpVersion: 142.0.7444.176, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (32e47c5affb17560ddbfab6b613ef38e)] -&gt; xpath: //table[@id=&apos;transactionTable&apos;]/tbody/tr[2]/child::td[2]/a]
+Session ID: 32e47c5affb17560ddbfab6b613ef38e
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.getText(RemoteWebElement.java:191)
+	at pb_PageObjects.AccountOverviewsPage.verifyAmountDebitted(AccountOverviewsPage.java:78)
+	at pb_TestCases.TestTranferFunds.testTransferFunds(TestTranferFunds.java:55)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 28 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">pb_TestCases.TestOpenNewAccount#testOpenNewAccount</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">pb_TestCases.TestRegisterNewUserAndLogin#verifyRegisterNewUser</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>FirefoxWorkFlowTest</h2><h3 id="m3">pb_TestCases.TestOpenNewAccount#testOpenNewAccount</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">pb_TestCases.TestRegisterNewUserAndLogin#verifyRegisterNewUser</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">pb_TestCases.TestTranferFunds#testTransferFunds</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

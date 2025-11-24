@@ -1,11 +1,15 @@
 package pb_PageObjects;
 
+import java.time.Duration;
 import java.util.HashMap;
 import java.util.Map;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class TransferFundsPage {
 	
@@ -39,7 +43,13 @@ public class TransferFundsPage {
 			} catch (Exception e) {
 				System.out.println(e.getMessage());
 			
-            }	driver.findElement(transferFundsBtn).click();	
+            }	
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10)); // wait up to 10 seconds
+		// Wait until the element is clickable
+		WebElement transferButton = wait.until(ExpectedConditions.elementToBeClickable(transferFundsBtn));
+		// Click the button
+		transferButton.click();	
+		
 			if (driver.findElement(resultMsg).getText().contains("Transfer Complete!")) {
 				System.out.println("Transfer of $" + amount + " from " + fromAccount + " to " + toAccount
 						+ " completed successfully.");

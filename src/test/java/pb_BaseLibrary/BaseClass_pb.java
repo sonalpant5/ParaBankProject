@@ -10,20 +10,23 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Parameters;
 
 public class BaseClass_pb {
-	
+
 	protected static WebDriver driver;
 	protected Properties prop = new Properties();
-
+	private String browser;
+	
+	@Parameters({"browser"})
 	@BeforeClass
-	public void setup() throws Exception {
+	public void setup(String browser) throws Exception {
 		readPropertiesFile("pb_global.properties");
 		// Add browser launch logic here based on prop values
-
+		this.browser = browser.toLowerCase();
 
 		// Launch Browser based on browser type.
-		switch (prop.getProperty("browsertype").toLowerCase()) {
+		switch (this.browser) {
 		case "chrome":
 			driver = new ChromeDriver();
 			break;
@@ -31,6 +34,7 @@ public class BaseClass_pb {
 		case "firefox":
 			driver = new FirefoxDriver();
 			break;
+				
 		default:
 			throw new IllegalArgumentException("Unsupported browser: " + prop.getProperty("browsertype").toLowerCase());
 		}
@@ -66,14 +70,13 @@ public class BaseClass_pb {
 
 	}
 
-//	@SuppressWarnings("deprecation")
-//	@AfterClass
-//	public void tearDown() throws Exception
-//	{
-//		if (driver != null)
-//		driver.close();
-//		Runtime.getRuntime().exec("taskkill /F /IM chromeDriver.exe");
-//		Runtime.getRuntime().exec("taskkill /F /IM chrome.exe");
-//	}
+	
+	@AfterClass
+	public void tearDown() throws Exception
+	{
+		if (driver != null)
+		driver.close();
+		
+	}
 
 }
