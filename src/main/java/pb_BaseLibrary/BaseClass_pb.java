@@ -56,7 +56,8 @@ public class BaseClass_pb {
 	}
 
 	public void readPropertiesFile(String filename) throws Exception {
-		String filepath = System.getProperty("user.dir") + "/config/" + filename;
+		String filepath = new File("src/main/resources/config/" + filename).getAbsolutePath();
+		//String filepath = System.getProperty("user.dir") + "/config/" + filename;
 		File file = new File(filepath);
 		FileInputStream fis = new FileInputStream(file);
 		prop.load(fis);

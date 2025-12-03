@@ -8,9 +8,13 @@
 	<name>ParaBankProject</name>
 	<description>ParaBankProject</description>
 	<dependencies>
-	
-	
-	
+
+		<dependency>
+			<groupId>org.seleniumhq.selenium</groupId>
+			<artifactId>selenium-java</artifactId>
+			<version>4.38.0</version> <!-- latest stable version -->
+		</dependency>
+
 		<!--testng -->
 		<dependency>
 			<groupId>org.testng</groupId>
@@ -24,6 +28,6 @@
 			<artifactId>webdrivermanager</artifactId>
 			<version>6.3.2</version>
 		</dependency>
-	
+
 	</dependencies>
 </project>
